@@ -1,0 +1,4 @@
+C:/234122/hw5/cmake-build-debug/CMakeFiles/hw5.dir
+C:/234122/hw5/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/234122/hw5/cmake-build-debug/CMakeFiles/main.dir
+C:/234122/hw5/cmake-build-debug/CMakeFiles/rebuild_cache.dir

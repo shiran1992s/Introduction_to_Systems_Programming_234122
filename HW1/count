@@ -1,0 +1,14 @@
+#!/bin/bash
+
+function check {
+	
+	if [ ! -d "$num" ]; then 
+		exit 1
+	fi
+}
+
+num=$1
+check
+
+cat "$num"/* | sort -r | uniq -c | sort -rn |sed -e 's/^[ \t]*//;s/[ \t]*$//' | sed -e 's/ /\t/g'
+

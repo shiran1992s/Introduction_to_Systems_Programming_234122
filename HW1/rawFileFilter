@@ -1,0 +1,24 @@
+#!/bin/bash
+
+function check {
+	
+	if [[ !( -f "$infile" ) ]];then 
+		 exit 1
+	fi
+	
+	if ((("$num"<1) || ("$num">49)));
+		then exit 1
+	fi
+	if [[ !( -d "$num" ) ]];then 
+		mkdir $num
+	fi
+	
+	touch ./$num/$outfile
+}
+
+infile=$1
+num=$2
+outfile=$3
+check
+
+sed -e 's/[^A,C,G,T]//g' $infile | cut -c1-$num  | sed -n 'n;p;n;n' > ./$num/$outfile

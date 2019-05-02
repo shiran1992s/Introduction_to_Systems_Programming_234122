@@ -1,0 +1,4 @@
+"C:\Users\Asaf Raudnitz\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\181.4445.84\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=C:/TDM-GCC-64/bin/gcc.exe -DCMAKE_CXX_COMPILER=C:/TDM-GCC-64/bin/g++.exe -G "CodeBlocks - MinGW Makefiles" C:\234122\hw5
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/234122/hw5/cmake-build-debug

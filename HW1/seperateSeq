@@ -1,0 +1,19 @@
+#!/bin/bash
+
+function check {
+	
+	if [ ! -f "$infile" ]; then 
+		exit 1
+	fi
+}
+
+infile="$*"
+check
+
+while read line; do
+	str="$(sed 's/[^T]//g' <<< $line)"
+	num=$(($(wc -c <<< $str)-1))
+	for((i=1;i<=$num;i++)) do
+		sed -r "s/(([^T]*T){$i}).*/\1/"  <<< $line
+	done
+done <"$infile"
